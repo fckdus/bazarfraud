@@ -263,9 +263,9 @@ if run_button:
             ]
             display_cols = [c for c in display_cols if c in filtered.columns]
 
-            styled = filtered[display_cols].style.applymap(
-                style_risk, subset=["risk_level"]
-            ).format({
+            styled = filtered[display_cols].style.map(
+    style_risk, subset=["risk_level"]
+).format({
                 "cost": "{:,.0f} ₽",
                 "cr_install_to_reg": "{:.1%}",
                 "cvr_click_to_install": "{:.2%}",
