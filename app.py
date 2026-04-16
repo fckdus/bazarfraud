@@ -222,10 +222,7 @@ if run_button:
                 <div class="label">Low</div>
                 <div class="value">{stats['low']}</div>
             </div>
-            <div class="metric-card risk-cost">
-                <div class="label">Подозрительный расход</div>
-                <div class="value">{stats['suspect_cost']:,.0f} ₽</div>
-            </div>
+           
         </div>
         """, unsafe_allow_html=True)
 
